@@ -43,6 +43,8 @@ public class Chest : MonoBehaviour
             {
                 draw.sprite = spriteOpen;
                 playerPressedE = true;
+                GetComponent<TutorialTrigger>().Hide();
+                GetComponent<Collider2D>().enabled = false;
             }
         }
         

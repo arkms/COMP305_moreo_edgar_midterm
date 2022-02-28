@@ -124,11 +124,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 16cf05228a4a97845afac1ffdea1005b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &7764681646563757318
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -157,11 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00dd8e2be7204e74ea081e3db7f1ce22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalForce: 0
-  verticalForce: 0
+  speed: 6.7
+  jumpForce: 900
   groundRadius: 0.33
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   groundCheckPos: {x: 0, y: -0.69, z: 0}
-  isGrounded: 0

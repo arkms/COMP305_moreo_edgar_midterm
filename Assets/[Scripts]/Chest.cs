@@ -6,6 +6,7 @@ public class Chest : MonoBehaviour
 {
 
     [SerializeField] Sprite spriteOpen;
+    [SerializeField] GameObject arrow;
     SpriteRenderer draw;
     bool playerPressedE = false;
     bool playerInside = false;
@@ -43,6 +44,7 @@ public class Chest : MonoBehaviour
             {
                 draw.sprite = spriteOpen;
                 playerPressedE = true;
+                Destroy(arrow);
                 GetComponent<TutorialTrigger>().Hide();
                 GetComponent<Collider2D>().enabled = false;
             }
